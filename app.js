@@ -4,10 +4,16 @@ const app = express();
 
 // Create MySQL connection
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
+  //host: 'localhost',
+  // user: 'root',
+  // password: '',
+  // database: 'c237_musichub'
+
+  host: 'db4free.net',
+  user: 'h22030508',
+  password: 'Hzhijrg300705',
   database: 'c237_musichub'
+
 });
 connection.connect((err) => {
   if (err) {
